@@ -15,12 +15,12 @@ $id_cliente = $_GET['id_cliente'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
 
-    <title>Cadastro de Cliente</title>
+    <title>Edição de Cliente</title>
 </head>
 
 <body>
     <div class="container" style="margin-top: 40px; width:500px">
-        <h4>Cadastro de Cliente</h4>
+        <h4>Edição de Cliente</h4>
         <form action="_atualizar_cliente.php" method="post" style="margin-top: 20px;">
             <?php
             $sql = "SELECT * FROM `cliente` WHERE id_cliente = $id_cliente";

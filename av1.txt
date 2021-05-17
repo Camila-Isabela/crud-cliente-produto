@@ -1,0 +1,9 @@
+Criar as funcionalidades de Criar cliente, alterar cliente, listar todos clientes, listar um cliente e excluir cliente.
+O cliente terá nome, cpf, endereço, CEP, cidade e estado.
+As funcionalidades de Clientes devem estar disponíveis por tela.
+Criar a funcionalidade de criar novos produtos a partir de um arquivos contendo novos produtos
+Produto terá nome, descrição, preço, quantidade e peso em gramas.
+A funcionalidade de carga de produto deverá fazer upload do arquivo para processamento.
+O aluno deverá criar o banco de dados no mysql com as tabelas de cliente e produto.
+As tabelas do banco deverão ter as colunas citadas para cada entidade Cliente e Produto.
+O código deverá ser em PHP.

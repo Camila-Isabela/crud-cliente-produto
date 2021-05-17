@@ -19,7 +19,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Cadastrar Cliente</h5>
                         <p class="card-text">Opção para cadastrar clientes.</p>
-                        <a href="adicionar_aluno.php" class="btn btn-primary">Cadastrar</a>
+                        <a href="adicionar_cliente.php" class="btn btn-primary">Cadastrar</a>
                     </div>
                 </div>
             </div>

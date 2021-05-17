@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <div class="container" style="margin-top: 100px">
-
+    <div class="container" style="margin-top: 60px">
+        <h2 style="margin:50px 0px; font-weight: bold; text-align:center">CLIENTES</h2>
         <div class="row">
             <div class="col-sm-6">
                 <div class="card">
@@ -44,7 +44,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-6" style="margin-top: 10px;">
+            <div class="col-sm-6" style="margin-top: 12.5px;">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Adicionar Clientes</h5>
@@ -60,13 +60,14 @@
                 </div>
             </div>
 
+            <h2 style="margin:50px 0px; font-weight: bold; text-align:center">PRODUTOS</h2>
 
-            <div class="col-sm-6" style="margin-top: 10px;" >
+            <div class="col-sm-6" style="margin-top: 10px;">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Cadastrar Produto</h5>
                         <p class="card-text">Opção para cadastrar produtos.</p>
-                        <a href="adicionar_aluno.php" class="btn btn-primary">Cadastrar</a>
+                        <a href="adicionar_produto.php" class="btn btn-primary">Cadastrar</a>
                     </div>
                 </div>
             </div>
@@ -74,9 +75,29 @@
             <div class="col-sm-6" style="margin-top: 10px;">
                 <div class="card">
                     <div class="card-body">
+                        <h5 class="card-title">Listar Produtos</h5>
+                        <p class="card-text">Visualizar, editar e excluir produtos.</p>
+                        <a href="listar_produto.php" class="btn btn-primary">Listar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6" style="margin-top: 10px;">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pesquisar Produto</h5>
+                        <p class="card-text">Pesquisar e visualizar produto.</p>
+                        <a href="pesquisar_produto.php" class="btn btn-primary">Pesquisar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6" style="margin-top: 12.5px;">
+                <div class="card">
+                    <div class="card-body">
                         <h5 class="card-title">Adicionar Produtos</h5>
                         <p class="card-text">Upload de arquivo no formato CSV para adicionar produtos.</p>
-                        <form action="manipular_arquivo.php" method="post" name="csv" enctype="multipart/form-data">
+                        <form action="manipular_arquivo_produto.php" method="post" name="csv" enctype="multipart/form-data">
                             <div>
                                 <label>Escolher Arquivo</label>
                                 <input type="file" name="file" accept=".csv">

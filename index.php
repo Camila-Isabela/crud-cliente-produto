@@ -29,7 +29,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Listar Clientes</h5>
                         <p class="card-text">Visualizar, editar e excluir clientes.</p>
-                        <a href="listar_aluno.php" class="btn btn-primary">Listar</a>
+                        <a href="listar_cliente.php" class="btn btn-primary">Listar</a>
                     </div>
                 </div>
             </div>

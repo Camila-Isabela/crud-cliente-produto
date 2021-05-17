@@ -1,3 +1,36 @@
+<?php
+
+include 'conexao.php';
+
+
+if (isset($_POST["import"])) {
+    $filename = $_FILES["file"]["tmp_name"];
+
+    
+
+    if ($_FILES["file"]["size"] > 0) {
+        $file = fopen($filename, "r");
+        
+        fgets($file); // Aqui é o comando para ignorar a primeira linha(header)
+        
+        while (($column = fgetcsv($file, 10000, ";")) !== FALSE) {
+            
+            $sqlInsert = "INSERT INTO cliente (nome_cliente, cpf_cliente, endereco_cliente, cep_cliente, cidade_cliente, estado_cliente) values ('" . $column[0] . "', '" . $column[1] . "', '" . $column[2] . "', '" . $column[3] . "', '" . $column[4] . "', '" . $column[5] . "')";
+
+            $result = mysqli_query($conexao, $sqlInsert);            
+        }
+
+        
+
+        echo "<script>alert('Inserção realizada com sucesso!')</script>";
+
+    }
+}
+
+?>
+
+<!-- //colar o index  -->
+
 <!DOCTYPE html>
 <html lang="en">
 

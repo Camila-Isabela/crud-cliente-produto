@@ -10,7 +10,7 @@ $cidade_cliente = $_POST['cidade_cliente'];
 $estado_cliente = $_POST['estado_cliente'];
 
 $sql = "INSERT INTO `cliente`( `nome_cliente`, `cpf_cliente`, `endereco_cliente`, `cep_cliente`, `cidade_cliente`, `estado_cliente`)
- VALUES ('$nome_cliente',  $cpf_cliente, '$endereco_cliente', $cep_cliente, '$cidade_cliente', '$estado_cliente')";
+ VALUES ('$nome_cliente', '$cpf_cliente', '$endereco_cliente', '$cep_cliente', '$cidade_cliente', '$estado_cliente')";
 
 $inserir = mysqli_query($conexao,$sql); //inserindo os dados
 

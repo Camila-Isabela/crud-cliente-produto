@@ -39,7 +39,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Pesquisar Cliente</h5>
                         <p class="card-text">Pesquisar e visualizar cliente.</p>
-                        <a href="pesquisar_aluno.php" class="btn btn-primary">Pesquisar</a>
+                        <a href="pesquisar_cliente.php" class="btn btn-primary">Pesquisar</a>
                     </div>
                 </div>
             </div>

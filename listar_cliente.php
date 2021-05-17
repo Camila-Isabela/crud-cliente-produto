@@ -56,9 +56,9 @@
                     <td><?php echo $cidade_cliente ?></td>
                     <td><?php echo $estado_cliente ?></td>
                     <td>
-                        <a href="editar_cliente.php?id=<?php echo $id ?>" class="btn btn-warning btn-sm" role="button" style="color: #fff;"><i class="far fa-edit"></i>&nbsp;Editar</a>
+                        <a href="editar_cliente.php?id_cliente=<?php echo $id_cliente ?>" class="btn btn-warning btn-sm" role="button" style="color: #fff;"><i class="far fa-edit"></i>&nbsp;Editar</a>
 
-                        <a href="deletar_cliente.php?id=<?php echo $id ?>" class="btn btn-danger btn-sm" role="button"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
+                        <a href="deletar_cliente.php?id_cliente=<?php echo $id_cliente ?>" class="btn btn-danger btn-sm" role="button"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
                     </td>
                 </tr>
 

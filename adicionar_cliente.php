@@ -28,7 +28,7 @@
 
             <div class="form-group">
                 <label>Cpf</label>
-                <input name="cpf_cliente" type="number" class="form-control" placeholder="Insira o cpf" autocomplete="off" required>
+                <input name="cpf_cliente" type="text" class="form-control" placeholder="Insira o cpf" autocomplete="off" required>
             </div>
 
             <div class="form-group">
@@ -38,7 +38,7 @@
 
             <div class="form-group">
                 <label>Cep</label>
-                <input name="cep_cliente" type="number" class="form-control" placeholder="Insira o cep" autocomplete="off" required>
+                <input name="cep_cliente" type="text" class="form-control" placeholder="Insira o cep" autocomplete="off" required>
             </div>
 
             <div class="form-group">

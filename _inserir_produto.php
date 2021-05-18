@@ -23,7 +23,7 @@ $inserir = mysqli_query($conexao,$sql); //inserindo os dados
     </center>
     <div style="padding-top: 20px;">
         <center> 
-            <a href="index.php" role="button" class="btn btn-sm btn-primary">Cadastrar novo produto</a>
+            <a href="adicionar_produto.php" role="button" class="btn btn-sm btn-primary">Cadastrar novo produto</a>
         </center>
     </div>
 </div>

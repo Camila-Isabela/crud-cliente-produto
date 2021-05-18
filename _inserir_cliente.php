@@ -24,7 +24,7 @@ $inserir = mysqli_query($conexao,$sql); //inserindo os dados
     </center>
     <div style="padding-top: 20px;">
         <center> 
-            <a href="index.php" role="button" class="btn btn-sm btn-primary">Cadastrar novo cliente</a>
+            <a href="adicionar_cliente.php" role="button" class="btn btn-sm btn-primary">Cadastrar novo cliente</a>
         </center>
     </div>
 </div>

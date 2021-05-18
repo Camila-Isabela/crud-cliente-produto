@@ -25,11 +25,10 @@
             <thead>
                 <tr>
                     <th scope="col">Nome</th>
-                    <th scope="col">Cpf</th>
-                    <th scope="col">Endereço</th>
-                    <th scope="col">Cep</th>
-                    <th scope="col">Cidade</th>
-                    <th scope="col">Estado</th>
+                    <th scope="col">Descrição</th>
+                    <th scope="col">Preço</th>
+                    <th scope="col">Quantidade</th>
+                    <th scope="col">Peso</th>
                 </tr>
             </thead>
             <?php
@@ -38,26 +37,24 @@
 
             $pesquisar = $_POST['pesquisar'];
 
-            $resultado = "SELECT * FROM `cliente` WHERE nome_cliente LIKE '%$pesquisar%' LIMIT 5 ";
+            $resultado = "SELECT * FROM `produto` WHERE nome_produto LIKE '%$pesquisar%' LIMIT 5 ";
             $resultado_pesquisa = mysqli_query($conexao, $resultado);
 
             while ($array = mysqli_fetch_array($resultado_pesquisa)) {
 
-                $nome_cliente = $array['nome_cliente'];
-                $cpf_cliente = $array['cpf_cliente'];
-                $endereco_cliente = $array['endereco_cliente'];
-                $cep_cliente = $array['cep_cliente'];
-                $cidade_cliente = $array['cidade_cliente'];
-                $estado_cliente = $array['estado_cliente'];
+                $nome_produto = $array['nome_produto'];
+                $descricao_produto = $array['descricao_produto'];
+                $preco_produto = $array['preco_produto'];
+                $quantidade_produto = $array['quantidade_produto'];
+                $peso_produto = $array['peso_produto'];
             ?>
 
                 <tr>
-                    <td><?php echo $nome_cliente ?></td>
-                    <td><?php echo $cpf_cliente ?></td>
-                    <td><?php echo $endereco_cliente ?></td>
-                    <td><?php echo $cep_cliente ?></td>
-                    <td><?php echo $cidade_cliente ?></td>
-                    <td><?php echo $estado_cliente ?></td>
+                    <td><?php echo $nome_produto ?></td>
+                    <td><?php echo $descricao_produto ?></td>
+                    <td><?php echo $preco_produto ?></td>
+                    <td><?php echo $quantidade_produto ?></td>
+                    <td><?php echo $peso_produto ?></td>
                 </tr>
 
             <?php } ?>

@@ -14,7 +14,7 @@ $deletar = mysqli_query($conexao, $sql);
     <center>
         <h3 style="margin-top: 20px;">Excluído com sucesso.</h3>
         <div style="margin-top: 10px;">
-            <a href="listar_cliente.php" class="btn btn-sm btn-warning" style="color: #fff;">Voltar</a>
+            <a href="listar_produto.php" class="btn btn-sm btn-warning" style="color: #fff;">Voltar</a>
         </div>
     </center>
 </div>
